@@ -1,0 +1,13 @@
+@prefix props: <https://w3id.org/props#>
+@prefix bot: <https://w3id.org/bot#>
+@prefix beo: <https://pi.pauwel.be/voc/buildingelement#>
+@prefix schema: <http://schema.org/>
+beo:TestWindowShape
+  a sh:NodeShape;
+  sh:targetClass beo:Window;
+  sh:property[
+    sh:path schema:value;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:message "A Window must have only one GUID"
+  ].
